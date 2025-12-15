@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*Removing the styling and margin of unordered lists*/
 ul {
     list-style: none;
@@ -14,13 +18,25 @@ nav {
     display: grid;
     grid-template-columns: 6vw 1fr 10vw 5vw;
     grid-template-rows: 6vh;
-    background-color: #F4933E;
+    background-color: rgb(244, 147, 62);
     align-items: center;
 }
 
 nav ul {
     display: flex;
     gap: 3vw;
+}
+
+/*Hero Image for Index with CTA*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-image: linear-gradient(to bottom, rgba(244,147,62),rgba(244,147,62,0) 20%), url(Images/HERO.jpeg);
+    background-size: cover;
+    background-position: center 70%;
 }
 
 /*Footer*/
